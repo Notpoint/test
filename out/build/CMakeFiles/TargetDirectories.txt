@@ -1,0 +1,6 @@
+/home/lh/Desktop/learncmake/out/build/CMakeFiles/learncmake.dir
+/home/lh/Desktop/learncmake/out/build/CMakeFiles/edit_cache.dir
+/home/lh/Desktop/learncmake/out/build/CMakeFiles/rebuild_cache.dir
+/home/lh/Desktop/learncmake/out/build/adder/CMakeFiles/adder.dir
+/home/lh/Desktop/learncmake/out/build/adder/CMakeFiles/edit_cache.dir
+/home/lh/Desktop/learncmake/out/build/adder/CMakeFiles/rebuild_cache.dir
