@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/lh/Desktop/learncmake/external/glfw/include -I/home/lh/Desktop/learncmake/adder/include
 
 CXX_FLAGS = 
 

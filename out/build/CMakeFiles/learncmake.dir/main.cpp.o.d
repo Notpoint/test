@@ -146,4 +146,5 @@ CMakeFiles/learncmake.dir/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/lh/Desktop/learncmake/adder/adder.h
+ /home/lh/Desktop/learncmake/adder/include/adder.h \
+ /home/lh/Desktop/learncmake/external/glfw/include/GLFW/glfw3.h

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lh/Desktop/learncmake/adder/adder.cpp" "adder/CMakeFiles/adder.dir/adder.cpp.o" "gcc" "adder/CMakeFiles/adder.dir/adder.cpp.o.d"
+  "/home/lh/Desktop/learncmake/adder/src/adder.cpp" "adder/CMakeFiles/adder.dir/src/adder.cpp.o" "gcc" "adder/CMakeFiles/adder.dir/src/adder.cpp.o.d"
   )
 
 # Targets to which this target links.

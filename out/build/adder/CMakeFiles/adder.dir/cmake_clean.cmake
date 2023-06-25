@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/adder.dir/adder.cpp.o"
-  "CMakeFiles/adder.dir/adder.cpp.o.d"
+  "CMakeFiles/adder.dir/src/adder.cpp.o"
+  "CMakeFiles/adder.dir/src/adder.cpp.o.d"
   "libadder.a"
   "libadder.pdb"
 )

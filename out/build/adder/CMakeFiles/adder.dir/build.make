@@ -69,28 +69,28 @@ include adder/CMakeFiles/adder.dir/progress.make
 # Include the compile flags for this target's objects.
 include adder/CMakeFiles/adder.dir/flags.make
 
-adder/CMakeFiles/adder.dir/adder.cpp.o: adder/CMakeFiles/adder.dir/flags.make
-adder/CMakeFiles/adder.dir/adder.cpp.o: ../../adder/adder.cpp
-adder/CMakeFiles/adder.dir/adder.cpp.o: adder/CMakeFiles/adder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lh/Desktop/learncmake/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object adder/CMakeFiles/adder.dir/adder.cpp.o"
-	cd /home/lh/Desktop/learncmake/out/build/adder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT adder/CMakeFiles/adder.dir/adder.cpp.o -MF CMakeFiles/adder.dir/adder.cpp.o.d -o CMakeFiles/adder.dir/adder.cpp.o -c /home/lh/Desktop/learncmake/adder/adder.cpp
+adder/CMakeFiles/adder.dir/src/adder.cpp.o: adder/CMakeFiles/adder.dir/flags.make
+adder/CMakeFiles/adder.dir/src/adder.cpp.o: ../../adder/src/adder.cpp
+adder/CMakeFiles/adder.dir/src/adder.cpp.o: adder/CMakeFiles/adder.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lh/Desktop/learncmake/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object adder/CMakeFiles/adder.dir/src/adder.cpp.o"
+	cd /home/lh/Desktop/learncmake/out/build/adder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT adder/CMakeFiles/adder.dir/src/adder.cpp.o -MF CMakeFiles/adder.dir/src/adder.cpp.o.d -o CMakeFiles/adder.dir/src/adder.cpp.o -c /home/lh/Desktop/learncmake/adder/src/adder.cpp
 
-adder/CMakeFiles/adder.dir/adder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/adder.dir/adder.cpp.i"
-	cd /home/lh/Desktop/learncmake/out/build/adder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lh/Desktop/learncmake/adder/adder.cpp > CMakeFiles/adder.dir/adder.cpp.i
+adder/CMakeFiles/adder.dir/src/adder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/adder.dir/src/adder.cpp.i"
+	cd /home/lh/Desktop/learncmake/out/build/adder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lh/Desktop/learncmake/adder/src/adder.cpp > CMakeFiles/adder.dir/src/adder.cpp.i
 
-adder/CMakeFiles/adder.dir/adder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/adder.dir/adder.cpp.s"
-	cd /home/lh/Desktop/learncmake/out/build/adder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lh/Desktop/learncmake/adder/adder.cpp -o CMakeFiles/adder.dir/adder.cpp.s
+adder/CMakeFiles/adder.dir/src/adder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/adder.dir/src/adder.cpp.s"
+	cd /home/lh/Desktop/learncmake/out/build/adder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lh/Desktop/learncmake/adder/src/adder.cpp -o CMakeFiles/adder.dir/src/adder.cpp.s
 
 # Object files for target adder
 adder_OBJECTS = \
-"CMakeFiles/adder.dir/adder.cpp.o"
+"CMakeFiles/adder.dir/src/adder.cpp.o"
 
 # External object files for target adder
 adder_EXTERNAL_OBJECTS =
 
-adder/libadder.a: adder/CMakeFiles/adder.dir/adder.cpp.o
+adder/libadder.a: adder/CMakeFiles/adder.dir/src/adder.cpp.o
 adder/libadder.a: adder/CMakeFiles/adder.dir/build.make
 adder/libadder.a: adder/CMakeFiles/adder.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lh/Desktop/learncmake/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libadder.a"

@@ -93,6 +93,9 @@ learncmake_EXTERNAL_OBJECTS =
 learncmake: CMakeFiles/learncmake.dir/main.cpp.o
 learncmake: CMakeFiles/learncmake.dir/build.make
 learncmake: adder/libadder.a
+learncmake: external/glfw/src/libglfw3.a
+learncmake: /usr/lib/x86_64-linux-gnu/librt.a
+learncmake: /usr/lib/x86_64-linux-gnu/libm.so
 learncmake: CMakeFiles/learncmake.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lh/Desktop/learncmake/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable learncmake"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/learncmake.dir/link.txt --verbose=$(VERBOSE)

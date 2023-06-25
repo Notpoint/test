@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /home/lh/Desktop/learncmake/out/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/lh/Desktop/learncmake/out/build/CMakeFiles /home/lh/Desktop/learncmake/out/build/adder//CMakeFiles/progress.marks
@@ -130,29 +175,29 @@ adder/fast:
 	cd /home/lh/Desktop/learncmake/out/build && $(MAKE) $(MAKESILENT) -f adder/CMakeFiles/adder.dir/build.make adder/CMakeFiles/adder.dir/build
 .PHONY : adder/fast
 
-adder.o: adder.cpp.o
-.PHONY : adder.o
+src/adder.o: src/adder.cpp.o
+.PHONY : src/adder.o
 
 # target to build an object file
-adder.cpp.o:
-	cd /home/lh/Desktop/learncmake/out/build && $(MAKE) $(MAKESILENT) -f adder/CMakeFiles/adder.dir/build.make adder/CMakeFiles/adder.dir/adder.cpp.o
-.PHONY : adder.cpp.o
+src/adder.cpp.o:
+	cd /home/lh/Desktop/learncmake/out/build && $(MAKE) $(MAKESILENT) -f adder/CMakeFiles/adder.dir/build.make adder/CMakeFiles/adder.dir/src/adder.cpp.o
+.PHONY : src/adder.cpp.o
 
-adder.i: adder.cpp.i
-.PHONY : adder.i
+src/adder.i: src/adder.cpp.i
+.PHONY : src/adder.i
 
 # target to preprocess a source file
-adder.cpp.i:
-	cd /home/lh/Desktop/learncmake/out/build && $(MAKE) $(MAKESILENT) -f adder/CMakeFiles/adder.dir/build.make adder/CMakeFiles/adder.dir/adder.cpp.i
-.PHONY : adder.cpp.i
+src/adder.cpp.i:
+	cd /home/lh/Desktop/learncmake/out/build && $(MAKE) $(MAKESILENT) -f adder/CMakeFiles/adder.dir/build.make adder/CMakeFiles/adder.dir/src/adder.cpp.i
+.PHONY : src/adder.cpp.i
 
-adder.s: adder.cpp.s
-.PHONY : adder.s
+src/adder.s: src/adder.cpp.s
+.PHONY : src/adder.s
 
 # target to generate assembly for a file
-adder.cpp.s:
-	cd /home/lh/Desktop/learncmake/out/build && $(MAKE) $(MAKESILENT) -f adder/CMakeFiles/adder.dir/build.make adder/CMakeFiles/adder.dir/adder.cpp.s
-.PHONY : adder.cpp.s
+src/adder.cpp.s:
+	cd /home/lh/Desktop/learncmake/out/build && $(MAKE) $(MAKESILENT) -f adder/CMakeFiles/adder.dir/build.make adder/CMakeFiles/adder.dir/src/adder.cpp.s
+.PHONY : src/adder.cpp.s
 
 # Help Target
 help:
@@ -161,11 +206,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... adder"
-	@echo "... adder.o"
-	@echo "... adder.i"
-	@echo "... adder.s"
+	@echo "... src/adder.o"
+	@echo "... src/adder.i"
+	@echo "... src/adder.s"
 .PHONY : help
 
 
