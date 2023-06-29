@@ -1,11 +1,12 @@
 #include <iostream>
-#include "adder.h"
 #include <GLFW/glfw3.h>
 #include <learncmake.h>
 
 
 int main(){
-	std::cout << add(1.1f,73.8f) << '\n';
+    #ifdef USE_ADDER
+	    std::cout << add(1.1f,73.8f) << '\n';
+    #endif
 	std::cout << "VERSION" << learncmake_VERSION_MAJOR;
 
 	GLFWwindow *window;

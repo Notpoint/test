@@ -181,9 +181,9 @@ CMakeFiles/learncmake.dir/main.cpp.o: ../../main.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  ../../adder/include/adder.h \
   ../../external/glfw/include/GLFW/glfw3.h \
-  learncmake.h
+  learncmake.h \
+  ../../adder/include/adder.h
 
 
 /usr/include/c++/11/bits/istream.tcc:
